@@ -6,7 +6,10 @@ export class GithubService {
   private username: string;
   private clientid='537865c510c4d1068497';
   private clientsecret='1210045d76ea04fec81298f7484351b1afda89ff';
-  constructor(private http:Http)
+  constructor(private http:Http){
+    console.log("It works");
+    this.username = "DennisIrimu";
+  }
   getUserInfo(){
      return this.http.get("https://api.github.com/users/" + this.username + "?client_id=" + this.clientid + "&client_secret=" + this.clientsecret)
      .map(res => res.json());

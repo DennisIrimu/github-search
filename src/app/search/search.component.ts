@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-
+import {GithubService} from '../github/github.service'
 @Component({
   selector: 'app-search',
   templateUrl: './search.component.html',
