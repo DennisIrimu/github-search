@@ -1,0 +1,9 @@
+.bar{
+  padding-top: 50px;
+}
+body {
+  background-image: url(/assets/ncs.jpg);
+  background-size: cover;
+  background-repeat: repeat;
+  height: 100vh;
+}
