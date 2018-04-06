@@ -5,5 +5,5 @@
 
 export const environment = {
   production: false,
-  apiUrl:"44d62e43a7b18bcd7763f00db2ccc013fa753bf8"
+  apiUrl:"https://api.github.com/users/DennisIrimu44d62e43a7b18bcd7763f00db2ccc013fa753bf8"
 };
