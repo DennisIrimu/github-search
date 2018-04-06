@@ -7,7 +7,23 @@ import {GithubService} from '../github/github.service'
 })
 export class SearchComponent implements OnInit {
 
-  constructor() { }
+  user: any[];
+  repos: any[];
+  username: string;
+  constructor(private githubService: GithubService){
+  }
+
+  searchUser(){
+    this.githubService.updateUser(this.username);
+    this.githubService.getUserInfo().subscribe(user =>{
+      console.log(user);
+      this.user = user;
+    });
+    this.githubService.getUserRepos().subscribe(repos =>{
+      console.log(repos);
+      this.repos = repos;
+    })
+  }
 
   ngOnInit() {
   }
